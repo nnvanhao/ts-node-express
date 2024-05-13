@@ -7,7 +7,7 @@ import pinoRequestMiddleware from 'pino-http'
 import './helpers/config'
 
 import { StatusCodes } from 'http-status-codes'
-import { healthRouter } from 'routes/health.route'
+import { healthRouter } from './routes/health.route'
 
 const logger = require('pino')()
 /*
