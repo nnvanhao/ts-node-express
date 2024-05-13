@@ -8,7 +8,6 @@ import './helpers/config'
 
 import { StatusCodes } from 'http-status-codes'
 import { healthRouter } from 'routes/health.route'
-import api from '../api'
 
 const logger = require('pino')()
 /*
@@ -46,8 +45,6 @@ app.use(cors({ origin: '*' }))
 
 // Completely public
 app.use('/health', healthRouter)
-
-app.use('api/v1', api)
 
 /* Define a route for the root path ("/")
  using the HTTP GET method */
