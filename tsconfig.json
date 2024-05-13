@@ -103,5 +103,8 @@
       "tsconfig-paths/register"
     ],
     "files": true
-  }
+  },
+  "include": [
+    "./api/*.ts"
+  ]
 }
